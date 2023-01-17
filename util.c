@@ -1295,6 +1295,7 @@ int do_authentication(const cfg_t *cfg, const device_t *devices,
 
     fido_assert_free(&assert);
   }
+  retval = 0;
 
 out:
   reset_pk(&pk);
